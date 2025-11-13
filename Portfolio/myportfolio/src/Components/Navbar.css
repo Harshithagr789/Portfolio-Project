@@ -1,0 +1,56 @@
+/* --- Navbar.css --- */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* ENSURE FULL WIDTH */
+  width: 100%; 
+  /* REMOVE ALL PADDING HERE */
+  padding: 0; 
+  position: sticky;
+  top: 0;
+  z-index: 30;
+  background: rgba(15, 23, 42, 0.9);
+  backdrop-filter: blur(8px);
+}
+
+.logo {
+  color: #a78bfa;
+  font-size: 1.5rem;
+  font-weight: 700;
+  /* ADD LEFT PADDING TO THE LOGO ONLY */
+  padding-left: 2rem; 
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  /* margin-left: auto; is good for pushing it right */
+  margin-left: auto; 
+  /* ADD RIGHT PADDING TO THE LINKS CONTAINER ONLY */
+  padding-right: 2rem;
+}
+
+.nav-links a {
+  color: var(--text-light, #fff);
+  margin-left: 2rem;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.25s ease, transform 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: #a78bfa;
+  transform: translateY(-2px);
+}
+
+/* --- OPTIONAL GLOBAL FIX --- */
+/* Add this to the very top of your main CSS file (e.g., App.css or index.css) */
+/* This ensures there is no default browser margin/padding on the body/html */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+}
