@@ -14,15 +14,19 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v3
 
-      # Backend Build (Spring Boot - Gradle)
+      # -------------------------
+      # Backend Build (Spring Boot + Gradle)
+      # -------------------------
       - name: Give permission to gradlew
-        run: chmod +x Portfolio/portfolio/gradlew
+        run: chmod +x Portfolio/Portfolio/gradlew
 
       - name: Build Backend with Gradle
-        working-directory: Portfolio/portfolio
+        working-directory: Portfolio/Portfolio
         run: ./gradlew build
 
+      # -------------------------
       # Frontend Build (React)
+      # -------------------------
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
@@ -35,3 +39,5 @@ jobs:
       - name: Build Frontend
         working-directory: Portfolio/myportfolio
         run: npm run build
+
+
