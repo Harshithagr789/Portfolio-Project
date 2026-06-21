@@ -6,7 +6,7 @@ export default function Home() {
     <main>
       <section className="hero">
         <div className="hero-img">
-          <img src="/abc.jpeg" alt="Harshitha G R" />
+          <img src="/Putti.jpeg" alt="Harshitha G R" />
         </div>
 
         <div className="hero-text">

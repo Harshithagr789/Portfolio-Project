@@ -248,7 +248,7 @@ import Timeline from "./pages/Timeline";
 import Contact from "./pages/Contact";
 import "./App.css";
 
-function App() {
+function App() {  
   return (
     <Router>
       <Navbar />
